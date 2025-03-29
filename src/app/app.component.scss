@@ -1,0 +1,83 @@
+$pomme: #A67C00;
+$peche: #CC6B49;
+$fraise: #E63946;
+$poire: #6A7B3B;
+
+body {
+    font-family: "fruits", sans-serif;
+}
+.image{
+    transition: 500ms ease;
+}
+img{
+    margin: 0 auto;
+}
+.prod:hover{
+    transition: 500ms ease;
+     .image{
+        transition: 500ms ease;
+        height: 33% !important;
+     }
+     img{
+        transform: scale(1) !important;
+        opacity: 1 !important;
+     }
+}
+.prod{
+    transition: 500ms ease;
+}
+p{
+    font-weight: 500;
+}
+.card{
+    box-shadow:  0 0 .25rem white;
+}
+.btn{
+    box-shadow:  0 0 .25rem white;
+}
+span{
+    cursor: pointer;
+}
+@keyframes expandFromCenter {
+    from {
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+    to {
+      transform: scaleX(1);
+      transform-origin: center;
+    }
+  }
+  
+  @keyframes collapseToCenter {
+    from {
+      transform: scaleX(1);
+      transform-origin: center;
+    }
+    to {
+      transform: scaleX(0);
+      transform-origin: center;
+    }
+  }
+  
+  .animIn {
+    width: 100% !important;
+    animation: expandFromCenter .4s ease-in-out forwards;
+  }
+  
+  .animOut {
+    animation: collapseToCenter .4s ease-in-out forwards;
+    width: 0;
+  }
+  .apple:hover{
+        background-color: $pomme;
+  }
+  .strawberry:hover{
+        background-color: $fraise;
+  }
+  .peche:hover{
+        background-color: $peche;
+  }
+  .pear:hover{
+    background-color: $poire;
+  }

@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'fruits', sans-serif;
+    src: url("/assets/nasalization/Nasalization Rg.otf");
+    font-weight: normal;
+    font-style: normal; 
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
